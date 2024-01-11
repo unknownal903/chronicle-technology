@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Set background to black for a space-like feel */
+    color: #fff;
+}
+
+header {
+    background-color: transparent; /* Make header transparent */
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    transition: background-color 0.5s ease; /* Add transition effect for background change */
+}
+
+nav {
+    background-color: transparent; /* Make nav transparent initially */
+    padding: 0.5em;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+section {
+    padding: 2em;
+    margin-top: 80px; /* Compensate for fixed header */
+}
+
+footer {
+    background-color: transparent; /* Make footer transparent initially */
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+/* Scroll down effect for header, nav, and footer */
+body.scrolling header,
+body.scrolling nav,
+body.scrolling footer {
+    background-color: #333;
+    transition: background-color 0.5s ease;
+}
+
