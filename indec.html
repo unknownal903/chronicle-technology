@@ -1,0 +1,13 @@
+<!-- Add this script inside the <head> tag -->
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        window.addEventListener("scroll", function() {
+            const body = document.body;
+            const header = document.querySelector("header");
+            const nav = document.querySelector("nav");
+            const footer = document.querySelector("footer");
+            
+            body.classList.toggle("scrolling", window.scrollY > 0);
+        });
+    });
+</script>
